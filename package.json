@@ -1,0 +1,19 @@
+{
+  "name": "utml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmon2/UTML.git"
+  },
+  "author": "Simon Dorr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmon2/UTML/issues"
+  },
+  "homepage": "https://github.com/cmon2/UTML#readme"
+}
