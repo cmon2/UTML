@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cmon2/UTML/issues"
   },
-  "homepage": "https://github.com/cmon2/UTML#readme"
+  "homepage": "https://github.com/cmon2/UTML#readme",
+  "dependencies": {
+    "gsap": "^1.20.4"
+  }
 }
