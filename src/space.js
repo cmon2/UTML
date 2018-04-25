@@ -1,5 +1,5 @@
-import Cell from "./cell.js";
-import provideCSSGridUtils from "./cssgridutils.js";
+const Cell  = require("./cell.js");
+const provideCSSGridUtils  = require("./cssgridutils.js");
 
 module.exports = class Space {
 	
@@ -19,7 +19,7 @@ module.exports = class Space {
 		
 		this.cells = [];
 		
-		this.height = 9;
+		this.length = 9;
 		this.width = 18;
 		
 		for(var i = 0; i < this.element.countRows(); i++)
@@ -40,14 +40,14 @@ module.exports = class Space {
 	display(container)
 	{
 		//determins if space is limited by containers width or height
-		if(container.offsetHeight / container.offsetWidth > this.height / this.width)
+		if(container.offsetHeight / container.offsetWidth > this.length / this.width)
 		{
 			this.element.style.width = "" + container.offsetWidth  + "px";
-			this.element.style.height = "" + container.offsetWidth * ( this.height / this.width )  + "px";
+			this.element.style.height = "" + container.offsetWidth * ( this.length / this.width )  + "px";
 		}
 		else
 		{
-			this.element.style.width = "" + container.offsetHeight * ( this.width / this.height ) + "px";
+			this.element.style.width = "" + container.offsetHeight * ( this.width / this.length ) + "px";
 			this.element.style.height = "" + container.offsetHeight + "px";
 		}
 		

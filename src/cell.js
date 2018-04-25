@@ -13,11 +13,19 @@ module.exports = class Cell {
 		this.element.style.display = "flex";
 		this.element.style.justifyContent = "center";
 		this.element.style.alignItems = "center";
-		this.element.style.border = "1px solid black";
+		//this.element.style.border = "1px solid black";
 	}
-	
-	display()
-	{
+
+	display() {
 		this.whiteboard.space.element.appendChild(this.element);
+	}
+
+	getOffset() {
+		var offset = {
+			left: this.element.offsetLeft + this.element.offsetWidth / 2,
+			top: this.element.offsetTop + this.element.offsetHeight / 2
+		}
+
+		return offset;
 	}
 }

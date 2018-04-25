@@ -1,4 +1,4 @@
-var provideCSSGridUtils = module.exports = function(CSSGrid)
+module.exports = function provideCSSGridUtils(CSSGrid)
 {
 	CSSGrid.countRows = countRows;
 	CSSGrid.countColumns = countColumns;
